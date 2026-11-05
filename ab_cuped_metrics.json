@@ -1,0 +1,61 @@
+{
+  "dataset": "Avito Context Ad Clicks (rel-avito, 2015-04-25 to 2015-05-20)",
+  "pre_period": "2015-04-25 .. 2015-05-07 (13 days)",
+  "test_period": "2015-05-08 .. 2015-05-20 (13 days)",
+  "n_total": 98250,
+  "n_control": 48871,
+  "n_treatment": 49379,
+  "design_mde_cr_rel_pct": 3.0,
+  "design_mde_actions_rel_pct": 4.5,
+  "req_sample_size_cr_per_group": 46549,
+  "req_sample_size_actions_raw_per_group": 49082,
+  "req_sample_size_actions_cuped_per_group": 27962,
+  "srm_pvalue": 0.1051,
+  "aa_fpr_005": 0.0415,
+  "aa_ks_pvalue": 0.4267,
+  "cr_control_pct": 27.44,
+  "cr_treatment_pct": 28.36,
+  "cr_abs_uplift_pp": 0.92,
+  "cr_rel_uplift_pct": 3.35,
+  "cr_pvalue": 0.001327,
+  "actions_control_mean": 30.73,
+  "actions_treatment_mean": 32.26,
+  "actions_diff_raw": 1.52,
+  "actions_rel_uplift_raw_pct": 4.96,
+  "actions_raw_se": 0.51,
+  "actions_raw_ci95_half": 1.01,
+  "actions_raw_pvalue": 0.003,
+  "actions_bootstrap_ci95": [
+    0.61,
+    2.58
+  ],
+  "actions_bootstrap_pvalue": 0.001,
+  "cuped_theta_actions": 0.4747,
+  "cuped_corr_actions_yx": 0.656,
+  "cuped_variance_reduction_actions_pct": 43.0,
+  "cuped_ci_width_reduction_actions_pct": 24.5,
+  "actions_diff_cuped": 1.49,
+  "actions_rel_uplift_cuped_pct": 4.85,
+  "actions_cuped_se": 0.39,
+  "actions_cuped_ci95_half": 0.76,
+  "actions_cuped_pvalue": 0.000119,
+  "cuped_corr_contact_gmv_yx": 0.648,
+  "cuped_variance_reduction_gmv_pct": 42.0,
+  "holm_bonferroni_multiple_testing": {
+    "cr_metric": {
+      "raw_pvalue": 0.0013268196192448311,
+      "holm_adjusted_alpha": 0.05,
+      "holm_adjusted_pvalue": 0.001327,
+      "significant_after_holm": true
+    },
+    "cuped_actions_metric": {
+      "raw_pvalue": 0.0001193481150483054,
+      "holm_adjusted_alpha": 0.025,
+      "holm_adjusted_pvalue": 0.000239,
+      "significant_after_holm": true
+    }
+  },
+  "guardrail_search_bounce_ctrl_pct": 28.909,
+  "guardrail_search_bounce_trt_pct": 28.806,
+  "guardrail_pvalue": 0.7217
+}
